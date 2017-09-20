@@ -1,7 +1,7 @@
 {
-  "name": "react-help-queue",
+  "name": "reddit-clone",
   "version": "1.0.0",
-  "description": "react based help queue",
+  "description": "reddit-like clone",
   "main": "index.js",
   "scripts": {
     "test": "jest --watchAll",
