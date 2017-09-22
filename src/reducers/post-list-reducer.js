@@ -1,6 +1,6 @@
 export default (state = [], action) => {
   switch (action.type) {
-    case: 'ADD_POST':
+    case 'ADD_POST':
       const { title, timestamp, author, content, votes, id } = action;
       return [
         ...state,

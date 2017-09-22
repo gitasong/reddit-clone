@@ -7,7 +7,7 @@ describe("Post list reducer", () => {
     title: "Redux is badass",
     timestamp: 4500000000000,
     author: "superWebDev",
-    content: "Redux makes changing state a snap. You should use it!"
+    content: "Redux makes changing state a snap. You should use it!",
     votes: 7,
     id: 0
   };
