@@ -1,6 +1,7 @@
 import React from "react";
 import PostList from "./PostList";
 import NewPostForm from "./NewPostForm";
+import { connect } from "react-redux";
 
 class Feed extends React.Component {
 
@@ -18,4 +19,11 @@ class Feed extends React.Component {
   }
 }
 
-export default Feed;
+const mapStateToProps = state => {
+  console.log(state);
+  return {
+    masterPostList: state
+  }
+}
+
+export default connect(mapStateToProps)(Feed);
