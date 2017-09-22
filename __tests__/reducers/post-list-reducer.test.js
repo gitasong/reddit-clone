@@ -16,4 +16,19 @@ describe("Post list reducer", () => {
     expect(postList([], { type: null})).toEqual([]);
   });
 
+  test('should add post to post array', () => {
+    const { title, timestamp, author, content, votes, id } = postInfo;
+    action = {
+      type: c.ADD_POST,
+      title: title,
+      timestamp: timestamp,
+      author: author,
+      content: content,
+      votes: votes,
+      id: id
+    };
+    const futureState = [ postInfo ];
+    expect(postList([], action)).toEqual([postInfo]);
+  });
+
 });
