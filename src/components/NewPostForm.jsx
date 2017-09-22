@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { connect } from "react-redux";
 
 class NewPostForm extends React.Component {
 
@@ -32,5 +33,7 @@ class NewPostForm extends React.Component {
     );
   }
 }
+
+NewPostForm = connect()(NewPostForm);
 
 export default NewPostForm;
