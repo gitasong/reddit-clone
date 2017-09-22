@@ -30,7 +30,7 @@ class NewPostForm extends React.Component {
 
   render() {
     return (
-      <form>
+      <form onSubmit={this.submitForm}>
         <input
             ref="_title"
             type="text"
