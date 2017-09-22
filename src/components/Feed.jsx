@@ -12,7 +12,7 @@ class Feed extends React.Component {
     return (
       <div>
         <NewPostForm></NewPostForm>
-        <PostList></PostList>
+        <PostList postList={this.props.masterPostList}></PostList>
       </div>
     );
   }
