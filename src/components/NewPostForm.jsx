@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import c from './../constants';
+import { v4 } from "uuid";
 
 class NewPostForm extends React.Component {
 
@@ -17,7 +18,7 @@ class NewPostForm extends React.Component {
     const { dispatch } = this.props;
     const action = {
       type: c.ADD_POST,
-      id: id,
+      id: v4(),
       title: _title.val,
       timestamp: new Date().getTime(),
       author: _author.val,
