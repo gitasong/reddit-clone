@@ -9,6 +9,10 @@ class Feed extends React.Component {
     super(props);
   }
 
+  shouldComponentUpdate() {
+    return true;
+  }
+
   render() {
     return (
       <div>
