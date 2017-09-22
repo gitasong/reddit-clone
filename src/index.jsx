@@ -7,7 +7,7 @@ import reducer from './reducers/post-list-reducer';
 
 import App from "./components/App";
 
-// const store = createStore(reducer);
+const store = createStore(reducer);
 
 const render = (Component) => {
   ReactDOM.render(
