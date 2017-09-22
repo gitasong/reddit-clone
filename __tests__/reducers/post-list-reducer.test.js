@@ -1,0 +1,3 @@
+describe("Post list reducer", () => {
+
+});
