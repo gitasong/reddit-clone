@@ -14,4 +14,12 @@ function Post() {
   );
 }
 
+Post.propTypes = {
+  title: PropTypes.string.isRequired,
+  timestamp: PropTypes.string,
+  author: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
+  votes: PropTypes.number.isRequired,
+}
+
 export default Post;
