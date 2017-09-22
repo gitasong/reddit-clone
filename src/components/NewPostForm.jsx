@@ -5,6 +5,7 @@ import { connect } from "react-redux";
 class NewPostForm extends React.Component {
 
   constructor(props) {
+    console.log(props);
     super(props);
   }
 
