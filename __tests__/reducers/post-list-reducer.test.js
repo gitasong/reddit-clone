@@ -6,8 +6,4 @@ describe("Post list reducer", () => {
     expect(postList([], { type: null})).toEqual([]);
   });
 
-  test('imported value should match action type string', () => {
-    expect(constants.ADD_POST).toEqual('action ADD_POST has been successfully imported');
-  });
-
 });
