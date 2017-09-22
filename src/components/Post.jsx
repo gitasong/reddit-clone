@@ -1,8 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Moment from "moment";
 
 
-function Post() {
+function Post(props) {
+  const timestamp = new Moment().to(props.timestamp);
+
   return (
     <div>
       <h3>{props.title}</h3>
@@ -16,7 +19,7 @@ function Post() {
 
 Post.propTypes = {
   title: PropTypes.string.isRequired,
-  timestamp: PropTypes.string,
+  timestamp: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
   votes: PropTypes.number.isRequired,
