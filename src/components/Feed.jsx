@@ -49,11 +49,6 @@ class Feed extends React.Component {
   }
 }
 
-Feed.propTypes = {
-  upvote: PropTypes.func,
-  downvote: PropTypes.func
-};
-
 const mapStateToProps = state => {
   return {
     masterPostList: state
