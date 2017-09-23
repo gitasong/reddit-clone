@@ -10,4 +10,9 @@ function UpvoteButton(props) {
   );
 }
 
+UpvoteButton.propTypes = {
+  upvote: PropTypes.func,
+  downvote: PropTypes.func
+};
+
 export default UpvoteButton;

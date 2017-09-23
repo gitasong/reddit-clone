@@ -38,7 +38,9 @@ function PostList(props) {
 }
 
 PostList.PropTypes = {
-  postList: PropTypes.array
+  postList: PropTypes.array,
+  upvote: PropTypes.func,
+  downvote: PropTypes.func
 }
 
 export default PostList;

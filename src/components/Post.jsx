@@ -22,6 +22,8 @@ Post.propTypes = {
   author: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
   votes: PropTypes.number.isRequired,
+  upvote: PropTypes.func,
+  downvote: PropTypes.func
 }
 
 export default Post;
