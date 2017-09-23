@@ -9,6 +9,30 @@ class Feed extends React.Component {
     super(props);
   }
 
+  upvote(postID) {
+    console.log("upvote");
+    // console.log(postID);
+    let newMasterPostList = this.state.masterPostList.slice();
+    newMasterPostList.forEach(function(post) {
+      if (post.id === postID) {
+        post.votes++;
+      }
+    });
+    this.setState({masterPostList: newMasterPostList});
+  }
+
+  downvote(postID) {
+    console.log("upvote");
+    // console.log(postID);
+    let newMasterPostList = this.state.masterPostList.slice();
+    newMasterPostList.forEach(function(post) {
+      if (post.id === postID) {
+        post.votes--;
+      }
+    });
+    this.setState({masterPostList: newMasterPostList});
+  }
+
   shouldComponentUpdate() {
     return true;
   }
