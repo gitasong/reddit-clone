@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function Upvote(props) {
+function UpvoteButton(props) {
   return (
     <div>
       <button id="upvote">Upvote</button>
@@ -10,4 +10,4 @@ function Upvote(props) {
   );
 }
 
-export default Upvote;
+export default UpvoteButton;
