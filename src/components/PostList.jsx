@@ -31,7 +31,9 @@ function PostList(props) {
         author={post.author}
         content={post.content}
         votes={post.votes}
-        key={post.id}></Post>
+        key={post.id}
+        upvote={props.upvote}
+        downvote={props.downvote}></Post>
       )}
     </div>
   );
