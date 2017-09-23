@@ -21,6 +21,14 @@ export default (state = [], action) => {
         }
       }
       return upvotedState;
+    case 'DOWNVOTE':
+      let downvotedState = state.slice();
+      for (var i = 0; i < downvotedState.length; i ++){
+        if (downvotedState[i].id === action.id) {
+          downvotedState[i].votes--;
+        }
+      }
+      return downvotedState;
     default:
       return state;
   }
