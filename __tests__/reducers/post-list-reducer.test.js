@@ -19,7 +19,7 @@ describe("Post list reducer", () => {
   test('should add post to post array', () => {
     const { title, timestamp, author, content, votes, id } = postInfo;
     action = {
-      type: c.ADD_POST,
+      type: constants.ADD_POST,
       title: title,
       timestamp: timestamp,
       author: author,
@@ -30,5 +30,20 @@ describe("Post list reducer", () => {
     const futureState = [ postInfo ];
     expect(postList([], action)).toEqual([postInfo]);
   });
+
+  test('should increment post.votes by 1', () => {
+    const { title, timestamp, author, content, votes, id } = postInfo;
+    action = {
+      type: constants.UPVOTE,
+      title: title,
+      timestamp: timestamp,
+      author: author,
+      content: content,
+      votes: votes++,
+      id: id
+    };
+    const futureState = [ postInfo ];
+    expect(postList([], action)).toEqual([postInfo]);
+  })
 
 });
