@@ -59,7 +59,7 @@ describe("Post list reducer", () => {
       timestamp: 4500000000000,
       author: "superWebDev",
       content: "Redux makes changing state a snap. You should use it!",
-      votes: -1,
+      votes: 0,  // state changes are cumulative in tests
       id: 0
     };
     expect(postList([postInfo], action)).toEqual([afterDownvote]);
