@@ -19,7 +19,7 @@ class NewPostForm extends React.Component {
     const action = {
       type: c.ADD_POST,
       title: _title.value,
-      timestamp: new Date().getTime(),
+      timestamp: new Date().toUTCString(),
       author: _author.value,
       content: _content.value,
       votes: 0,
