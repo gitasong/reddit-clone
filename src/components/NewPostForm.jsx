@@ -25,7 +25,6 @@ class NewPostForm extends React.Component {
       votes: 0,
       id: v4()
     }
-    console.log(action.id);
     dispatch(action);
   }
 
