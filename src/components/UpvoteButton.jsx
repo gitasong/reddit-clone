@@ -12,7 +12,8 @@ function UpvoteButton(props) {
 
 UpvoteButton.propTypes = {
   upvote: PropTypes.func,
-  downvote: PropTypes.func
+  downvote: PropTypes.func,
+  id: PropTypes.string
 };
 
 export default UpvoteButton;
