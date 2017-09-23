@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Moment from "moment";
+import UpvoteButton from "./UpvoteButton";
 
 
 function Post(props) {
