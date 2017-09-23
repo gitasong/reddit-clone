@@ -46,6 +46,6 @@ describe("Post list reducer", () => {
       id: 0
     };
     expect(postList([postInfo], action)).toEqual([afterUpvote]);
-  })
+  });
 
 });
