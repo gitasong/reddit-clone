@@ -12,7 +12,7 @@ class Feed extends React.Component {
   }
 
   upvote(postID) {
-    console.log("upvote");
+    console.log("downvote");
     // console.log(postID);
     let newMasterPostList = this.state.masterPostList.slice();
     newMasterPostList.forEach(function(post) {
