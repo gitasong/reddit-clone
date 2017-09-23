@@ -14,7 +14,7 @@ function Post(props) {
       <p>{props.content}</p>
       <h5>Upvotes: {props.votes}</h5>
       <UpvoteButton upvote={props.upvote}
-      downvote={props.downvote}></UpvoteButton>
+      downvote={props.downvote} id={props.id}></UpvoteButton>
     </div>
   );
 }
@@ -26,7 +26,8 @@ Post.propTypes = {
   content: PropTypes.string.isRequired,
   votes: PropTypes.number.isRequired,
   upvote: PropTypes.func,
-  downvote: PropTypes.func
+  downvote: PropTypes.func,
+  id: PropTypes.string
 }
 
 export default Post;
