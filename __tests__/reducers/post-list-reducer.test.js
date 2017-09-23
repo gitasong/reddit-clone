@@ -8,7 +8,7 @@ describe("Post list reducer", () => {
     timestamp: 4500000000000,
     author: "superWebDev",
     content: "Redux makes changing state a snap. You should use it!",
-    votes: 7,
+    votes: 0,
     id: 0
   };
 
@@ -31,19 +31,21 @@ describe("Post list reducer", () => {
     expect(postList([], action)).toEqual([postInfo]);
   });
 
-  test('should increment post.votes by 1', () => {
+  test('should increment post votes by 1', () => {
     const { title, timestamp, author, content, votes, id } = postInfo;
     action = {
       type: constants.UPVOTE,
-      title: title,
-      timestamp: timestamp,
-      author: author,
-      content: content,
-      votes: votes++,
       id: id
     };
-    const futureState = [ postInfo ];
-    expect(postList([], action)).toEqual([postInfo]);
+    const afterUpvote = {
+      title: "Redux is badass",
+      timestamp: 4500000000000,
+      author: "superWebDev",
+      content: "Redux makes changing state a snap. You should use it!",
+      votes: 1,
+      id: 0
+    };
+    expect(postList([postInfo], action)).toEqual([afterUpvote]);
   })
 
 });
