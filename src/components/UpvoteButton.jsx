@@ -4,8 +4,8 @@ import PropTypes from "prop-types";
 function UpvoteButton(props) {
   return (
     <div>
-      <button id="upvote">Upvote</button>
-      <button id="downvote">Downvote</button>
+      <button id="upvote" upvote={props.upvote}>Upvote</button>
+      <button id="downvote" downvote={props.downvote}>Downvote</button>
     </div>
   );
 }
