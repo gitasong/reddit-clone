@@ -6,33 +6,26 @@ import { connect } from "react-redux";
 class Feed extends React.Component {
 
   constructor(props) {
+    console.log(props);
     super(props);
     this.upvote = this.upvote.bind(this);
     this.downvote = this.downvote.bind(this);
   }
 
   upvote(postID) {
-    console.log("downvote");
-    // console.log(postID);
-    let newMasterPostList = this.state.masterPostList.slice();
-    newMasterPostList.forEach(function(post) {
-      if (post.id === postID) {
-        post.votes++;
-      }
-    });
-    this.setState({masterPostList: newMasterPostList});
+    const { dispatch } = props;
+    const action = {
+      type: constants.UPVOTE,
+      id: postID
+    }
   }
 
   downvote(postID) {
-    console.log("upvote");
-    // console.log(postID);
-    let newMasterPostList = this.state.masterPostList.slice();
-    newMasterPostList.forEach(function(post) {
-      if (post.id === postID) {
-        post.votes--;
-      }
-    });
-    this.setState({masterPostList: newMasterPostList});
+    const { dispatch } = props;
+    const action = {
+      type: constants.DOWNVOTE,
+      id: postID
+    }
   }
 
   shouldComponentUpdate() {
