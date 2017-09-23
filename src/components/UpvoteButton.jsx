@@ -5,7 +5,7 @@ function UpvoteButton(props) {
   return (
     <div>
       <button id="upvote" onClick={() => {props.upvote(props.id)}}>Upvote</button>
-    <button id="downvote" onClick={() => {props.downvote(props.id)}}>Downvote</button>
+      <button id="downvote" onClick={() => {props.downvote(props.id)}}>Downvote</button>
     </div>
   );
 }
