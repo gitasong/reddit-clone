@@ -14,10 +14,10 @@ export default (state = [], action) => {
         }
       ]
     case 'UPVOTE':
-      let upState = state.slice();
-      for (var i = 0; i < upState.length; i ++){
-        if (upState[i].id === action.id) {
-          upState[i].upvotes++;
+      let upvotedState = state.slice();
+      for (var i = 0; i < upvotedState.length; i ++){
+        if (upvotedState[i].id === action.id) {
+          upvotedState[i].votes++;
         }
       }
       return upState;
