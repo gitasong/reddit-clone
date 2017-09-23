@@ -2,6 +2,8 @@ import React from "react";
 import PostList from "./PostList";
 import NewPostForm from "./NewPostForm";
 import { connect } from "react-redux";
+import constants from "./../constants";
+import PropTypes from "prop-types";
 
 class Feed extends React.Component {
 
