@@ -18,7 +18,7 @@ function Post(props) {
 
 Post.propTypes = {
   title: PropTypes.string.isRequired,
-  timestamp: PropTypes.number.isRequired,
+  timestamp: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
   votes: PropTypes.number.isRequired,
