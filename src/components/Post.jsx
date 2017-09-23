@@ -4,7 +4,6 @@ import Moment from "moment";
 
 
 function Post(props) {
-  const timestamp = new Moment().to(props.timestamp);
 
   return (
     <div>
