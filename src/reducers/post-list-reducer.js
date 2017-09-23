@@ -20,7 +20,7 @@ export default (state = [], action) => {
           upvotedState[i].votes++;
         }
       }
-      return upState;
+      return upvotedState;
     default:
       return state;
   }
