@@ -13,6 +13,14 @@ export default (state = [], action) => {
           id: id
         }
       ]
+    case 'UPVOTE':
+      let upState = state.slice();
+      for (var i = 0; i < upState.length; i ++){
+        if (upState[i].id === action.id) {
+          upState[i].upvotes++;
+        }
+      }
+      return upState;
     default:
       return state;
   }
