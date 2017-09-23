@@ -18,12 +18,12 @@ class NewPostForm extends React.Component {
     const { dispatch } = this.props;
     const action = {
       type: c.ADD_POST,
-      id: v4(),
-      title: _title.val,
+      title: _title.value,
       timestamp: new Date().getTime(),
-      author: _author.val,
-      content: _content.val,
+      author: _author.value,
+      content: _content.value,
       votes: 0,
+      id: v4()
     }
     console.log(action.id);
     dispatch(action);
