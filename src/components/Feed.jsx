@@ -7,6 +7,8 @@ class Feed extends React.Component {
 
   constructor(props) {
     super(props);
+    this.upvote = this.upvote.bind(this);
+    this.downvote = this.downvote.bind(this);
   }
 
   upvote(postID) {
