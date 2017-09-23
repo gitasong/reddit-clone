@@ -12,7 +12,8 @@ function Post(props) {
       <h5><em>{props.author}</em></h5>
       <p>{props.content}</p>
       <h5>Upvotes: {props.votes}</h5>
-      <UpvoteButton></UpvoteButton>
+      <UpvoteButton upvote={props.upvote}
+      downvote={props.downvote}></UpvoteButton>
     </div>
   );
 }
