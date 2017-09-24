@@ -30,26 +30,29 @@ class NewPostForm extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.submitForm}>
-        <input
-            ref="_title"
-            type="text"
-            id="title"
-            placeholder="Post Title"/>
-            <br/>
-            <input
-            ref="_author"
-            type="text"
-            id="author"
-            placeholder="Author Alias"/>
-            <br/>
-            <textarea
-            ref="_content"
-            id="content"
-            placeholder="Your scintillating content goes here."/>
-            <br/>
-          <button type="submit">Post</button>
-      </form>
+      <div>
+        <h2>Add A Post</h2>
+        <form onSubmit={this.submitForm}>
+          <input
+              ref="_title"
+              type="text"
+              id="title"
+              placeholder="Post Title"/>
+              <br/>
+              <input
+              ref="_author"
+              type="text"
+              id="author"
+              placeholder="Author Alias"/>
+              <br/>
+              <textarea
+              ref="_content"
+              id="content"
+              placeholder="Your scintillating content goes here."/>
+              <br/>
+            <button type="submit">Post</button>
+        </form>
+      </div>
     );
   }
 }
