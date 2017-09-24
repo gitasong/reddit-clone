@@ -10,6 +10,14 @@ Web app that allows the user to posts and view the list of all posts with title,
 * Users can also click buttons below each post to upvote or downvote the post.
 * App does all this without reloading/refreshing page.
 
+## Planning / Execution
+
+The purpose of this project was to integrate Redux with React. Since I didn't have any clear guidelines on how to do this from the outset of a project, and I knew I would need data in order to properly display all the component parts of the app, my process was a mixture of building out the React app structure and mixing in the Redux. I referenced several of my own prior projects——one without Redux integration (Garden Buddy) and one with Redux integrated post-React (React Help Queue) for proper syntax and placement of the various Redux commands and components within the overall component structure.
+
+I ended up having to go back and read portions of the curriculum that I had missed as I was executing, especially the _Retrieving Items from State_ and _Dispatching the Redux Action_ sections at https://www.learnhowtoprogram.com/react/react-and-redux/advanced-routing-with-react-router-removing-items-from-state, which made me realize I was writing my upvote and downvote methods all wrong (I was writing them pre-Redux and didn't realize that I needed to dispatch the actions directly in the methods and have the actions and reducers handle the functional code).
+
+Since it was allowed this week, I also ended up consulting another student's project and collaborating with her on troubleshooting when I couldn't get the buttons to work (which we finally did; yay!). I feel that my understanding of Redux has gone up a couple of notches, but it's still a rather complicated mess in my head, partly as a result of not having the time that others did to pull things together.
+
 ## Prerequisites
 
   You will need the following platforms, apps, and languages properly installed on your computer.
@@ -57,13 +65,3 @@ You can contact me with questions or inquiries at gitasong@github.io.
   This project is licensed under the MIT license.
 
   Copyright (c) 2017 Nicole Freed. All rights reserved.
-
-## Epicodus Final Weeks Planning
-
-How I will spend my eight hours today:
-
-As I have a doctor’s appointment mid-day, this work will be spread out over the weekend. Also, as I’ve fallen behind due to health problems, I’m going to use the weekend to play catch-up and complete at least one React-Redux project from the week. (Thanks for the opportunity to play catch-up, btw!)
-
-Work I’d like to prioritize in the weeks to come: 1) Solidifying my understanding of React/Redux, 2) learning React Native/studying mobile app design (as I’d like my capstone to be a mobile app), and in general, 3) studying larger-scale app architecture (since I may be working on enterprise-level apps at some point) and filling in the gaps between the small-scale algorithmic problems we worked on in Intro and the large-scale architectural designs of the frameworks we’ve been working on in Units 2 and 3. I feel that there are a lot of leaps in logic and general gaps in the curriculum moving between these two.
-
-Technical questions for further exploration: I would like to: a) re-acquaint myself with vanilla JavaScript, SANS frameworks (since I feel like I’ve forgotten it :), and b) possibly use it to build some of the apps we’ve built in Angular, React, etc. so that I can see and understand the transition between the various technologies and architectural levels. I would also like to: c) revisit the basics of OOP (especially the “this” variable!) as well as things like callbacks and higher-order functions and some of the newer ES6 syntax (e.g. fat arrow syntax, restructuring) that I never really understood fully. d) I also may want to look into app deployment, since at some point, I hope to sell my own apps.
