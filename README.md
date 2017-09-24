@@ -2,7 +2,7 @@
 
 Web app that allows the user to posts and view the list of all posts with title, content, timestamp, votes, and author's name/alias. Users can also click buttons below each post to upvote or downvote the post.
 
-#### By Nicole Freed
+#### By Nicole Freed (see bottom for final weeks' planning)
 
 ## Specs / User Stories
 * Users can add new posts to list of all posts.
