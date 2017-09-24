@@ -12,7 +12,7 @@ function Post(props) {
       <small>{props.timestamp}</small>
       <h5><em>{props.author}</em></h5>
       <p>{props.content}</p>
-      <h5>Upvotes: {props.votes}</h5>
+      <h5>Votes: {props.votes}</h5>
       <UpvoteButton upvote={props.upvote}
       downvote={props.downvote} id={props.id}></UpvoteButton>
     </div>
