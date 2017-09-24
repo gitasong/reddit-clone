@@ -12,7 +12,7 @@ const store = createStore(reducer);
 const render = (Component) => {
   ReactDOM.render(
     <Provider store={store}>
-      <Component/>
+      <App/>
     </Provider>,
     document.getElementById("react-app-root")
   );
