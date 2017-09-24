@@ -15,19 +15,21 @@ class Feed extends React.Component {
   }
 
   upvote(postID) {
-    const { dispatch } = props;
+    const { dispatch } = this.props;
     const action = {
       type: constants.UPVOTE,
       id: postID
     }
+    dispatch(action);
   }
 
   downvote(postID) {
-    const { dispatch } = props;
+    const { dispatch } = this.props;
     const action = {
       type: constants.DOWNVOTE,
       id: postID
     }
+    dispatch(action);
   }
 
   shouldComponentUpdate() {
